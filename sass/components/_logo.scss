@@ -1,0 +1,27 @@
+.logo {
+  display: block;
+  color: $accent-color;
+
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  &__text {
+    color: #000000;
+  }
+
+  &__text--inverse {
+    color: $primery-white-color;
+  }
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}

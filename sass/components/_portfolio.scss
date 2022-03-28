@@ -1,0 +1,46 @@
+.portfolio {
+  @extend %section;
+}
+
+.portfolio__title {
+  @extend %section-title;
+  @extend %visually-hidden;
+}
+
+.buttons {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
+
+.buttons__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.buttons__btn {
+  @extend %btn;
+  display: block;
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  background-color: $secondary-bg-color;
+  color: $title-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primery-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
