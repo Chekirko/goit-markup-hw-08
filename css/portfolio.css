@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 94px 0px;
+  padding: 60px 0px;
 }
 
 .portfolio__title {
@@ -76,34 +76,33 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
-}
-
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .logo {
@@ -134,16 +133,9 @@ body {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .site-nav__link {
@@ -180,20 +172,10 @@ body {
 }
 
 .contacts-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
 }
 
-.contacts-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .contacts-nav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -367,22 +349,6 @@ body {
   background-color: #2f303a;
 }
 
-.footer__columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.info {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-right: 70px;
-}
-
 .address {
   font-style: normal;
 }
@@ -406,16 +372,6 @@ body {
 
 .address__link:hover, .address__link:focus {
   color: #2196f3;
-}
-
-.join-us {
-  margin-right: 93px;
-}
-
-.join-us__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .join-us__item {
@@ -456,14 +412,8 @@ body {
   height: 20px;
 }
 
-.subscribe__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .subscribe__input {
-  width: 358px;
+  width: 70px;
   height: 50px;
   padding: 0 0 0 16px;
   margin-right: 12px;
@@ -476,8 +426,6 @@ body {
 }
 
 .subscribe__btn {
-  width: 200px;
-  height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;

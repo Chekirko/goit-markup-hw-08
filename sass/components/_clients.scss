@@ -10,12 +10,12 @@
 
 .clients__list {
   @extend %list;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 }
 
 .clients__item {
-  width: 170px;
+  // width: 170px;
   height: 92px;
 
   &:not(:last-child) {

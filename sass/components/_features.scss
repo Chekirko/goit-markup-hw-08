@@ -2,6 +2,12 @@
   @extend %section;
 }
 
+@media screen and (min-width: $desktop) {
+  .features {
+    padding: 94px 0px;
+  }
+}
+
 .features__title {
   @extend %section-title;
   @extend %visually-hidden;
@@ -9,11 +15,19 @@
 
 .features__list {
   @extend %list;
-  display: flex;
+  // display: flex;
 }
 
-.features__item:not(:last-child) {
-  margin-right: $card-set-gap;
+// .features__item:not(:last-child) {
+//   margin-right: $card-set-gap;
+// }
+
+.features__item {
+  @media screen and (max-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: $card-set-gap;
+    }
+  }
 }
 
 .features__thumb {

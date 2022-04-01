@@ -3,15 +3,15 @@
   background-color: $third-bg-color;
 }
 
-.footer__columns {
-  display: flex;
-  align-items: baseline;
-}
+// .footer__columns {
+//   // display: flex;
+//   // align-items: baseline;
+// }
 
-.info {
-  flex-grow: 1;
-  margin-right: 70px;
-}
+// .info {
+//   // flex-grow: 1;
+//   // margin-right: 70px;
+// }
 
 .address {
   font-style: normal;
@@ -43,9 +43,9 @@
   }
 }
 
-.join-us {
-  margin-right: 93px;
-}
+// .join-us {
+//   margin-right: 93px;
+// }
 
 .join-us__title {
   @extend %footer-title;
@@ -53,7 +53,7 @@
 
 .join-us__list {
   @extend %list;
-  display: flex;
+  // display: flex;
 }
 
 .join-us__item {
@@ -93,12 +93,13 @@
   @extend %footer-title;
 }
 
-.subscribe__form {
-  display: flex;
-}
+// .subscribe__form {
+//   display: flex;
+// }
 
 .subscribe__input {
-  width: 358px;
+  width: 70px;
+  // width: 358px;
   height: 50px;
   padding: 0 0 0 16px;
   margin-right: 12px;
@@ -112,8 +113,8 @@
 .subscribe__btn {
   @extend %btn;
   @extend %btn-primery;
-  width: 200px;
-  height: 50px;
+  // width: 200px;
+  // height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
