@@ -4,9 +4,15 @@
 
 @media screen and (min-width: $desktop) {
   .features {
-    padding: 94px 0px;
+    @extend %section--mode-desktop;
   }
 }
+
+// @media screen and (min-width: $desktop) {
+//   .features {
+//     padding: 94px 0px;
+//   }
+// }
 
 .features__title {
   @extend %section-title;

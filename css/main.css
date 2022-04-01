@@ -242,12 +242,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 1600px;
-  }
-}
-
 .hero__title {
   color: #ffffff;
   font-weight: 900;
