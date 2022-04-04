@@ -470,7 +470,7 @@ body {
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .team__member {
     width: 450px;
-    height: 622px;
+    height: auto;
   }
 }
 
@@ -485,7 +485,7 @@ body {
     margin-top: 30px;
     margin-left: 30px;
     width: calc((100% - 60px)/2);
-    height: 536px;
+    height: auto;
   }
 }
 
@@ -585,20 +585,75 @@ body {
   height: 20px;
 }
 
-.clients {
-  padding-top: 90px;
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
 }
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .clients__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .clients__item {
   height: 92px;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px)/2);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .clients__item {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 90px)/3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link {
