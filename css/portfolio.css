@@ -434,7 +434,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__columns {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -543,6 +543,7 @@ body {
 }
 
 .subscribe__input {
+  width: 100%;
   height: 50px;
   padding: 0 0 0 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
