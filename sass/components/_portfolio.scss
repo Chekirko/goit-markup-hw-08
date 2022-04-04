@@ -1,5 +1,9 @@
 .portfolio {
   @extend %section;
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 .portfolio__title {
@@ -10,13 +14,33 @@
 .buttons {
   @extend %list;
   display: flex;
-  justify-content: center;
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  flex-wrap: wrap;
+ 
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 40px;
+  }
+  
+   @media screen and (min-width: $tablet) {
+justify-content: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
-.buttons__item:not(:last-child) {
-  margin-right: 8px;
+.buttons__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 15px;
+  }
 }
 
 .buttons__btn {
