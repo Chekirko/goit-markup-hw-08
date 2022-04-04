@@ -3,15 +3,30 @@
   background-color: $third-bg-color;
 }
 
-// .footer__columns {
-//   // display: flex;
-//   // align-items: baseline;
-// }
+.footer__columns {
+@media screen and (min-width: $tablet) {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: baseline;
+}
 
-// .info {
-//   // flex-grow: 1;
-//   // margin-right: 70px;
-// }
+@media screen and (min-width: $tablet) {
+  justify-content: space-between;
+}
+ 
+}
+
+.info {
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+ 
+  // flex-grow: 1;
+  // margin-right: 70px;
+}
 
 .address {
   font-style: normal;
@@ -43,9 +58,13 @@
   }
 }
 
-// .join-us {
-//   margin-right: 93px;
-// }
+.join-us {
+    @media screen and (max-width: $desktop) {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+  // margin-right: 93px;
+}
 
 .join-us__title {
   @extend %footer-title;
@@ -53,7 +72,8 @@
 
 .join-us__list {
   @extend %list;
-  // display: flex;
+  display: flex;
+  justify-content: center;
 }
 
 .join-us__item {
@@ -93,36 +113,65 @@
   @extend %footer-title;
 }
 
-// .subscribe__form {
-//   display: flex;
-// }
+.subscribe {
+  @media screen and (max-width: $desktop) {
+    text-align: center;
+  }
+}
+
+.subscribe__form {  
+  @media screen and (min-width: $desktop) {
+display: flex;
+  }
+  
+}
 
 .subscribe__input {
   // width: 70px;
-  // width: 358px;
+  
   height: 50px;
   padding: 0 0 0 16px;
-  // margin-right: 12px;
+  
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: $third-bg-color;
   outline: none;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $desktop) {
+width: 450px; }
+
+@media screen and (min-width: $desktop) {
+width: 358px;
+margin-right: 12px;
+}
 }
 
 .subscribe__btn {
   @extend %btn;
   @extend %btn-primery;
-  // width: 200px;
-  // height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-
+  
+width: 200px;
+height: 50px;
+  padding-top: 10px 28px 10px 29px;
+ 
   display: flex;
+  justify-content: center;
   align-items: center;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  // @media screen and (min-width: $mobile) {
+
+  // }
+
+  @media screen and (max-width: $desktop) {
+    margin: 0 auto;
+  }
 }
 
 .subscribe__icon {
