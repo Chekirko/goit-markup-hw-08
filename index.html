@@ -19,27 +19,49 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <nav class="nav">
+            <nav class="header__nav">
                 <a href="./" class="logo header__logo">Web<span class="logo__text">Studio</span></a>
 
-                <ul class="site-nav list">
-                    <li class="site-nav__item"><a href="./" class="site-nav__link site-nav__link--current">Студия</a>
-                    </li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
+                <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <use class="menu-btn__icon-menu" href="./symbol-defs.svg#icon-menu"></use>
+                        <use class="menu-btn__icon-cross" href="./symbol-defs.svg#icon-cross"></use>
+                    </svg>
+                </button>
 
-            <ul class="contacts-nav list">
-                <li class="contacts-nav__item"><a href="mailto:info@devstudio.com" class="contacts-nav__link"><svg
-                            class="contacts-nav__icon1">
-                            <use href="./symbol-defs.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a></li>
-                <li class="contacts-nav__item"><a href="tel:+380961111111" class="contacts-nav__link"><svg
-                            class="contacts-nav__icon2">
-                            <use href="./symbol-defs.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a></li>
-            </ul>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a href="./"
+                                class="site-nav__link site-nav__link--current">Студия</a>
+                        </li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                    </ul>
+
+
+                    <ul class="contacts-nav">
+                        <li class="contacts-nav__item"><a href="mailto:info@devstudio.com"
+                                class="contacts-nav__link contacts-nav__link--mobile"><svg class="contacts-nav__icon1">
+                                    <use href="./symbol-defs.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com</a></li>
+                        <li class="contacts-nav__item"><a href="tel:+380961111111" class="contacts-nav__link"><svg
+                                    class="contacts-nav__icon2">
+                                    <use href="./symbol-defs.svg#icon-smartphone"></use>
+                                </svg>+38 096 111 11 11</a></li>
+                    </ul>
+
+                    <ul class="socials-nav">
+                        <li class="socials-nav__item"><a href=""
+                                class="socials-nav__link socials-nav__link--bordered">Instagram</a></li>
+                        <li class="socials-nav__item"><a href=""
+                                class="socials-nav__link socials-nav__link--bordered">Twitter</a></li>
+                        <li class="socials-nav__item"><a href=""
+                                class="socials-nav__link socials-nav__link--bordered">Facebook</a></li>
+                        <li class="socials-nav__item"><a href="" class="socials-nav__link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -362,7 +384,7 @@
                         <label for="agreement" class="agreement__label">
                             <input type="checkbox" class="agreement__checkbox" name="agreement" value="yes"
                                 id="agreement"><span class="agreement__icon"></span> Соглашаюсь с рассылкой и
-                            принимаю <a class="agreement__link" href="">Условия
+                            принимаю <a class="agreement__link" href=""> Условия
                                 договора</a>
                         </label>
                     </div>
@@ -374,6 +396,7 @@
 
         </div>
     </div>
+    <script src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
 </body>
 

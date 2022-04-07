@@ -5,7 +5,7 @@
   font-family: $secondary-font, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.17;
   text-decoration: none;
 
   &__text {
@@ -15,10 +15,20 @@
   &__text--inverse {
     color: $primery-white-color;
   }
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.19;
+  }
 }
 
 .header__logo {
-  margin-right: 93px;
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {
