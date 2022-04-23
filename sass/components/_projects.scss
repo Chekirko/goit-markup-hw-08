@@ -1,34 +1,31 @@
 .projects {
   @extend %list;
 
-  @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: -1 * $card-set-gap;
-      margin-top: -1 * $card-set-gap;
+  @include mq (tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1 * $card-set-gap;
+    margin-top: -1 * $card-set-gap;
   }
-
 }
 
 .projects__item {
 
-  @media screen and (max-width: $tablet) {
+  @include mq (mobile-only) {
     &:not(:last-child) {
       margin-bottom: $card-set-gap;
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq (tablet) {
     flex-basis: calc(100% / 2 - #{$card-set-gap});
     margin-top: $card-set-gap;
     margin-left: $card-set-gap;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     flex-basis: calc(100% / 3 - #{$card-set-gap});
   }
-
- 
 }
 
 .projects__link {
@@ -58,7 +55,7 @@
     height: 294px;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @include mq (tablet-only) {
     width: 354px;
     height: 294px;
   }
@@ -102,10 +99,10 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
-  &--stretched {
-    padding-bottom: 56px;
-  }
+  @include mq (tablet-only) {
+    &--stretched {
+      padding-bottom: 56px;
+    }
   }
 }
 

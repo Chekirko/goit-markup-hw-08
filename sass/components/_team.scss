@@ -2,8 +2,8 @@
   @extend %section;
   background-color: $secondary-bg-color;
 
-  @media screen and (min-width: $desktop) {
-    padding: 94px 0px;    
+  @include mq (desktop) {
+    padding: 94px 0px;
   }
 }
 
@@ -11,7 +11,7 @@
   @extend %section-title;
   margin-bottom: 30px;
 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
@@ -21,17 +21,16 @@
 .team__list {
   @extend %list;
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @include mq (tablet-only) {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
   }
 
-  @media screen and (min-width: $desktop) {
-display: flex;
+  @include mq (desktop) {
+    display: flex;
   }
-  
 }
 
 .team__member {
@@ -46,24 +45,24 @@ display: flex;
     height: auto;
   }
 
-  @media screen and (max-width: $tablet) {
+  @include mq (mobile-only) {
     &:not(:last-child) {
     margin-bottom: $card-set-gap;
+    }
   }
-}
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @include mq (tablet-only) {
     margin-top: 30px;
     margin-left: 30px;
     width: calc((100% - 60px)/2);
-    height: auto;  
+    height: auto;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     &:not(:last-child) {
-  margin-right: $card-set-gap;
-}
-}
+    margin-right: $card-set-gap;
+    }
+  }
 }
  
  .team__pic {

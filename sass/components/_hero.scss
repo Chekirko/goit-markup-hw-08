@@ -22,22 +22,22 @@
   }
       
     
-      @media (min-device-pixel-ratio: 3),
-      (-webkit-min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-        background-image: url(../images/Image@3x.jpg);
-      }
+  @media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+    background-image: url(../images/Image@3x.jpg);
+  }
 
-  @media screen and (min-width: $mobile) {
+  @include mq (mobile) {
     width: $mobile;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq (tablet) {
     width: $tablet;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     width: 100%;
     padding: 200px 0px;
     height: 600px;
@@ -55,8 +55,7 @@
   text-align: center;
   text-transform: uppercase;
 
- 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     font-size: 44px;
     line-height: 1.36;
   }

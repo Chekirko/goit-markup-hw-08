@@ -1,7 +1,7 @@
 .portfolio {
   @extend %section;
 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     padding: 94px 0;
   }
 }
@@ -15,20 +15,20 @@
   @extend %list;
   display: flex;
   flex-wrap: wrap;
- 
-  @media screen and (max-width: $tablet) {
+
+  @include mq (mobile-only) {
     margin-bottom: 40px;
   }
-  
-   @media screen and (min-width: $tablet) {
-justify-content: center;
+
+  @include mq (tablet) {
+    justify-content: center;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @include mq (tablet-only) {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     margin-bottom: 50px;
   }
 }
@@ -38,7 +38,7 @@ justify-content: center;
     margin-right: 8px;
   }
 
-  @media screen and (max-width: $tablet) {
+  @include mq (mobile-only) {
     margin-bottom: 15px;
   }
 }

@@ -178,7 +178,7 @@ body {
   z-index: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -248,7 +248,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .site-nav {
     margin-bottom: 302px;
   }
@@ -265,7 +265,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .site-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -298,18 +298,9 @@ body {
     font-size: 14px;
     line-height: 1.14;
   }
-}
-
-.site-nav__link--current {
-  position: relative;
-  color: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
   .site-nav__link--current::after {
     content: '';
     position: absolute;
-    /* width: 78px; */
     width: 100%;
     height: 4px;
     top: 44px;
@@ -319,7 +310,12 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+.site-nav__link--current {
+  position: relative;
+  color: #2196f3;
+}
+
+@media screen and (max-width: 767.98px) {
   .contacts-nav {
     margin-bottom: 64px;
   }
@@ -336,13 +332,13 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .contacts-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts-nav__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -377,7 +373,7 @@ body {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .contacts-nav__link--mobile {
     font-size: 34px;
     line-height: 1.18;
@@ -392,7 +388,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts-nav__link {
     font-size: 12px;
     line-height: 1.17;
@@ -405,7 +401,7 @@ body {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .contacts-nav__icon1 {
     display: none;
   }
@@ -423,7 +419,7 @@ body {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .contacts-nav__icon2 {
     display: none;
   }
@@ -482,7 +478,7 @@ body {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .buttons {
     margin-bottom: 40px;
   }
@@ -496,7 +492,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .buttons {
     margin-bottom: 30px;
   }
@@ -512,7 +508,7 @@ body {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .buttons__item {
     margin-bottom: 15px;
   }
@@ -554,7 +550,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .projects__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -608,7 +604,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .projects__thumb {
     width: 354px;
     height: 294px;
@@ -655,7 +651,7 @@ body {
   border-left: 1px solid #eeeeee;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .projects__content--stretched {
     padding-bottom: 56px;
   }
@@ -703,7 +699,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .info {
     margin-bottom: 60px;
     text-align: center;
@@ -735,7 +731,7 @@ body {
   color: #2196f3;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .join-us {
     margin-bottom: 60px;
     text-align: center;
@@ -789,7 +785,7 @@ body {
   height: 20px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe {
     text-align: center;
   }
@@ -815,7 +811,7 @@ body {
   outline: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe__input {
     margin-bottom: 20px;
   }
@@ -851,7 +847,7 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe__btn {
     margin: 0 auto;
   }

@@ -3,15 +3,15 @@
     display: flex;
     position: relative;
 
-    @media screen and (min-width: $tablet) {
+    @include mq (tablet) {
         display: none;
     }
 }
 
 .socials-nav__item {
-        &:not(:last-child) {
-            margin-right: 10px;
-        }
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 
@@ -30,10 +30,9 @@
     // }
 
     &--bordered::after {               
-content: '';
-height: 100%;  
-margin-left: 10px;                           
-border: 1px solid rgba(33, 33, 33, 0.2);
-                
-            }
+    content: '';
+    height: 100%;  
+    margin-left: 10px;                           
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    }
 }

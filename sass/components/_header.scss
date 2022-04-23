@@ -4,20 +4,18 @@
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 
-  @media screen and (min-width: $tablet) {
-      padding-top: 21px;
-      padding-bottom: 21px;
+  @include mq (tablet) {
+          padding-top: 21px;
+          padding-bottom: 21px;
   }
 
-  @media screen and (min-width: $desktop) {
-      padding-top: 24px;
-      padding-bottom: 25px;
-  }
+    @include mq (desktop) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 }
 
-// .header__container {
-// margin: 0;
-// }
+
 
 .header__nav {
   display: flex;
@@ -39,10 +37,10 @@
 fill: $accent-color;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq (tablet) {
 display: none;
   }
-}
+ }
 
 .menu-btn__icon-cross {
   display: none;
@@ -71,21 +69,21 @@ background-color: $primery-white-color;
     z-index: 1;
   } 
 
-  @media screen and (max-width: $tablet) {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 796px;
+  @include mq (mobile-only) {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 796px;
 
-    padding: 48px 40px;
-  }
+  padding: 48px 40px;
+    } 
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-  }
+@include mq (tablet) {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-grow: 1;
+      }
 }

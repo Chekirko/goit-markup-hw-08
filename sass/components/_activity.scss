@@ -1,10 +1,9 @@
 .activity {
    padding: 0px 0px 94px;
 
-  @media screen and (max-width: $desktop) {
+   @include mq (notDesktop) {
     display: none;
-    
-  }
+   }
 }
 
 .activity__title {

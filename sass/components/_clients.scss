@@ -1,66 +1,58 @@
 .clients {
   @extend %section;
 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     padding: 94px 0;
   }
-
 }
 
 .clients__title {
   @extend %section-title;
   margin-bottom: 30px;
 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     margin-bottom: 50px;
   }
- 
 }
 
 .clients__list {
   @extend %list;
   display: flex;
 
-  @media screen and (max-width: $desktop) {
-      flex-wrap: wrap;
-      margin-top: -1 * $card-set-gap;
-      margin-left: -1 * $card-set-gap;    
+  @include mq (notDesktop) {
+    flex-wrap: wrap;
+    margin-top: -1 * $card-set-gap;
+    margin-left: -1 * $card-set-gap;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq (desktop) {
     justify-content: center;
-  }
-  
+  }  
 }
 
 .clients__item {
 height: 92px;
 
-@media screen and (max-width: $tablet) {
-width: calc((100% - 60px)/2);
+@include mq (mobile-only) {
+  width: calc((100% - 60px)/2);
 }
 
-@media screen and (max-width: $desktop) {
+@include mq (notDesktop) {
   margin-top: $card-set-gap;
   margin-left: $card-set-gap;
 }
 
-@media screen and (min-width: $tablet) and (max-width: $desktop) {
+@include mq (tablet-only) {
   width: calc((100% - 90px)/3);
 }
 
-@media screen and (min-width: $desktop) {
+@include mq (desktop) {
   width: 170px;
   
-    &:not(:last-child) {
-      margin-right: $card-set-gap;
-    }
+  &:not(:last-child) {
+    margin-right: $card-set-gap;
+  }
 }
-  
- 
-
-
-
 }
 
 .clients__link {
