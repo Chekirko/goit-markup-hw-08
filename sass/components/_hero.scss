@@ -3,6 +3,7 @@
 // max-width: 1600px;
 
 .hero {
+  width: 100%;
   padding: 118px 0px;
   // height: 400px;
    margin-left: auto;
@@ -29,16 +30,8 @@
     background-image: url(../images/Image@3x.jpg);
   }
 
-  @include mq (mobile) {
-    width: $mobile;
-  }
-
-  @include mq (tablet) {
-    width: $tablet;
-  }
 
   @include mq (desktop) {
-    width: 100%;
     padding: 200px 0px;
     height: 600px;
   }

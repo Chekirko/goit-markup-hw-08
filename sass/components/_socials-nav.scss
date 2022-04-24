@@ -1,6 +1,7 @@
 .socials-nav {
     @extend %list;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
 
     @include mq (tablet) {

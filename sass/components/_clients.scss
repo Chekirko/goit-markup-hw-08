@@ -11,6 +11,8 @@
   margin-bottom: 30px;
 
   @include mq (desktop) {
+    font-size: 36px;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
 }

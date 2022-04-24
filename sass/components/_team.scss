@@ -12,9 +12,9 @@
   margin-bottom: 30px;
 
   @include mq (desktop) {
-    margin-bottom: 50px;
     font-size: 36px;
-    line-height: 1.17;
+    line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -70,10 +70,10 @@
  }
 
 .team__content {
-  padding: 30px 0px 24px;
+  padding: 30px 0px 30px;
 
-  @media screen and (min-width: $desktop) {
-    padding-bottom: 30px;
+  @include mq (tablet-only) {
+    padding-bottom: 24px;
   }
 }
 
