@@ -5,10 +5,72 @@
 %section-title {
   color: $title-text-color;
 
-  font-size: 28px;
-  line-height: 1.18;
+  font-size: 40px;
+  line-height: 0.9;
   text-align: center;
 }
+
+%section-title--secondary {
+  color: $accent-color;
+}
+
+%list {
+  list-style: none;
+}
+
+%btn {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+  
+
+
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  background-color: $accent-color;
+  color: $primery-white-color;
+  
+  &:after {
+      content: "";
+      background: $accent-color;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      margin-left: -20px !important;
+      margin-top: -120%;
+      opacity: 0;
+      transition: all 0.8s
+    }
+  
+    &:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s ;
+  }
+
+  &:hover {
+    background-color: rgb(30, 41, 164);
+  }
+  
+}
+  
+ 
+
+
+
 
 %visually-hidden {
   position: absolute;
@@ -23,26 +85,10 @@
   overflow: hidden;
 }
 
-%list {
-  list-style: none;
-}
 
-%btn {
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-%btn-primery {
-  font-family: $main-font;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
 
-  background-color: $accent-color;
-  color: $primery-white-color;
-}
+
 
 %footer-title {
   margin-bottom: 20px;
