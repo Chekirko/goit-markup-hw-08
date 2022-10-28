@@ -1,0 +1,55 @@
+.presentation__wrapper {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.presentation__img-wrapper {
+
+    @include mq (tablet) {
+            width: 580px;
+        }
+
+                @include mq (tabletBig) {
+                    width: 680px;
+                }
+    @include mq (desktop) {
+        width: 780px;
+    }
+}
+
+
+
+.presentation__content {
+    padding: 40px;
+    text-align: left;
+
+    @include mq (tablet-only) {
+            width: 580px;           
+            padding: 0 0 0 40px;
+        }
+
+                @include mq (tabletBig) {
+                    width: 680px;                    
+                    padding-left: 60px;
+                }
+
+}
+
+.presentation__title {
+    @extend %section-title;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.presentation__title--colored {
+    @extend %section-title--secondary;
+}
+
+.presentation__text {
+    margin-bottom: 30px;
+}
+
+.presentation__button {
+    @extend %btn
+}
