@@ -3,7 +3,6 @@
 @mixin mq ($screen) {
     $mobile: 480px;
     $tablet: 768px;
-    $tabletBig: 980px;
     $desktop: 1200px;
 
     @if $screen == mobile-only {
@@ -29,12 +28,6 @@
             @content;
         }
     }
-
-        @else if $screen == tabletBig {
-            @media screen and (min-width: $tabletBig) {
-                @content;
-            }
-        }
 
     @else if $screen == desktop {
         @media screen and (min-width: $desktop) {
